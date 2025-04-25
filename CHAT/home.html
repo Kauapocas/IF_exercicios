@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester 1.4.2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4169E1;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header .login {
+            display: flex;
+            align-items: center;
+        }
+        .header .login img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+         .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .content img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .text {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 200px;
+        }
+        .buttons a {
+            text-decoration: none;
+            background-color: #00FFFF;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 10px 0;
+        }
+		.btn-login{
+			width: 100%;
+			padding: 16px 0px;
+			margin: 25px;
+			border: none;
+			border-radius: 8px;
+			outline: none;
+			text-transform: uppercase;
+			font-weight: 800;
+			letter-spacing: 3px;
+			color: #2b134b;
+			background: #00ff88;
+			cursor: pointer;
+			box-shadow: 0px 10px 40px -12px #00ff8052;
+		}
+		@media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .content img {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+            .text {
+                text-align: left;
+                margin-bottom: 0;
+            }
+            .buttons {
+                margin-left: auto;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="login">
+            <img src="img/icon_login.png" alt="Login Icon">
+            <a href="login.html">Login</a>
+        </div>
+        <h1>Ester 1.4.2</h1>
+    </div>
+    <div class="content">
+        <img src="img/Ester.png" alt="Imagem da Ester">
+        <div class="text">
+            <h2>Sobre a Inteligência Artificial</h2>
+            <p>
+                A Ester foi criada com a intenção de auxiliar pessoas que sofrem com 
+                ansiedade, depressão e estresse, buscando intervenções que podem ajudar 
+                e incentivando a busca de ajuda profissional.
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="index.html">ESTER</a>
+            <a href="#">Teste DASS21</a>
+        </div>
+    </div>
+</body>
+</html>

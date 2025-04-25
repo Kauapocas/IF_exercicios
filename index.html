@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #EBEFE3;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+      background-color: #8D9E6F;
+      color: #2F3B1C;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #myImage {
+      width: 100px;
+    }
+
+    #demo {
+      font-size: 20px;
+      margin: 10px;
+      color: #2F3B1C;
+    }
+
+    h2 {
+      color: #2F3B1C;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Lâmpada</h2>
+    <p>Alterar o valor de um atributo de imagem.</p>
+    <button onclick="document.getElementById('myImage').src='lampada_on.gif'">Acender a lâmpada</button>
+    <img id="myImage" src="lampada_off.gif" style="width:100px;">
+    <button onclick="document.getElementById('myImage').src='lampada_off.gif'">Apagar a lâmpada</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Fonte</h2>
+    <p id="demo">JavaScript pode alterar o estilo CSS.</p>
+    <button onclick="document.getElementById('demo').style.fontSize='35px'">Crescer</button>
+    <button onclick="document.getElementById('demo').style.fontSize='16px'">Diminuir</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Esconder</h2>
+    <p id="demo1">Esconder elementos</p>
+    <button onclick="document.getElementById('demo1').style.display='none'">Esconder</button>
+    <button onclick="document.getElementById('demo1').style.display='block'">Aparecer</button>
+  </div>
+</body>
+</html>
